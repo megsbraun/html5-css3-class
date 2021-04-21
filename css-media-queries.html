@@ -1,0 +1,38 @@
+<!DOCTYLE html>
+<html>
+    <head>
+        <title>CSS media queries</title>
+        <style>
+            .show-small-up {
+                /* display: none; */
+            }
+
+    .show-small-up.visibility-hidden {
+        display: block;
+        width: 100%;
+        height: 125x;
+        visibility: hidden;
+        background: blue 
+    }
+
+
+        @media screen and (min-width: 576px) {
+            .show-small-up {
+                display: block;
+            }
+            
+            .show-small-up.visibility-hidden {
+                visibility: visible; 
+            }
+        
+        }
+
+        </style>
+
+    </head>
+    <body>
+        <div class="show-small-up visibility-hidden">show on small</div>
+
+        <div>show extra small up</div>
+    </body>
+</html>
